@@ -3,5 +3,5 @@
 	// set the encoding here to whatever your dictionary file uses.
 	// Hint: Try "UTF-8"!
 	// After you change this, you have to restart Sublime!
-	"encoding": "ISO-8859-1"
+	"encoding": "UTF-8"
 }
