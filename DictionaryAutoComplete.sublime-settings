@@ -1,7 +1,41 @@
 {
-	// If you use another dictionary than the standard en_US,
-	// set the encoding here to whatever your dictionary file uses.
-	// Hint: Try "UTF-8"!
-	// After you change this, you have to restart Sublime!
-	"encoding": "UTF-8"
+  // ----------- default for all languages -----------
+  // This is the default encoding for all dictionaries
+  "encoding" : "UTF-8",
+  // Insert the original auto-complete list "before", "after", "none" or "default".
+  // If set to "default" let Sublime (or other completion plugging) to decide.
+  "insert original": "default",
+  // The maximal number of suggestions returned by this plugging.
+  "maximum results": 10,
+  // The scopes where DictionaryAutoComplete is allowed.
+  "scopes":["text", "comment", "string.quoted"],
+  // The minimal length to fire DictionaryAutoComplete.
+  // For backward compatibility reasons it is set to 1, but probably 3 is more reasonable
+  "minimal length": 1,
+  // A list of characters after which DictionaryAutoComplete is not fired.
+  // For example to prevent firing after `:` or `@` you can set
+  // "forbidden prefixes": [":","@"]
+  "forbidden prefixes": [],
+  // Set the debug level.
+  // example : "status, print"
+  "debug": "no",
+  // --------------- language specific ---------------
+  // Be careful : if you use "languages" for some language in your local settings the entire structure "languages" is redefined.
+  "languages": {
+    "en_US": {
+      // this is the encoding for the default ST dictionary
+      "encoding": "ISO-8859-1",
+      // you can overwrite here the default dictionary
+      // for example by putting
+      // "dictionary" : "Packages/User/frequency_en.txt",
+    },
+    "en_GB": {
+      // this is the encoding for the default ST dictionary
+      "encoding": "ISO-8859-1",
+    },
+    "French": {
+      // all characters in the same string are treated as identical
+      "smash characters": ["eéèêëæ", "aàâä", "cç", "iîï", "oôöœ", "uùûü", "yÿ"]
+    }
+  }
 }
