@@ -16,18 +16,28 @@ Just type <kbd>Ctrl + Space</kbd> to show auto-completion, or allow auto-complet
 DictionaryAutoComplete takes the suggestions from the dictionary used for spell-checking by default.
 But if you want you can set another one in the settings (for example a frequency dictionary).
 
-Installation
-------------
-**Very easy with [Package Control](http://wbond.net/sublime_packages/package_control) right inside Sublime Text 2/3 (Package Control needs to be installed):**
 
-1.	Ctrl + shift + P
-2.  Search for "inst", hit enter
-3.  Search for "DictionaryAutoComplete", hit enter
+## Installation
 
-**Manually (not recommended):**
+### By Package Control
 
-1.  Clone or download this package
-2.	Put it into your Packages directory (find using 'Preferences' -> 'Browse Packages...')
+1. Download & Install `Sublime Text 3` (https://www.sublimetext.com/3)
+1. Go to the menu `Tools -> Install Package Control`, then,
+   wait few seconds until the `Package Control` installation finishes
+1. Go to the menu `Preferences -> Package Control`
+1. Type `Package Control Add Channel` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, input the following address and press <kbd>Enter</kbd>
+   ```
+   https://raw.githubusercontent.com/evandrocoan/StudioChannel/master/channel.json
+   ```
+1. Now, go again to the menu `Preferences -> Package Control`
+1. This time type `Package Control Install Package` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, search for `DictionaryAutoComplete` and press <kbd>Enter</kbd>
+
+See also:
+1. [ITE - Integrated Toolset Environment](https://github.com/evandrocoan/ITE)
+1. [Package control docs](https://packagecontrol.io/docs/usage) for details.
+
 
 Configuration
 -------------
